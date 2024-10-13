@@ -26,3 +26,8 @@ dist/
 *.njsproj
 *.sln
 *.sw?
+
+// firebase
+firebase.json
+.firebaserc
+.env

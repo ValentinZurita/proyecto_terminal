@@ -33,6 +33,10 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'no-unused-vars': 'warn',
+      'no-console': 'warn',
+      'semi': ['warn', 'never'],
+      'extends': ['eslint:recommended', 'plugin:react/recommended'],
     },
   },
 ]
