@@ -1,0 +1,114 @@
+/* Contenedor principal del panel de administración */
+.adminContainer {
+  max-width: 800px;
+  margin: 50px auto; /* Centrar el contenedor verticalmente */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar el contenido */
+}
+
+/* Encabezado */
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Mensaje de error */
+.errorMessage {
+  color: #d9534f;
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Contenedor de tabla con desplazamiento horizontal si es necesario */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* Tabla de usuarios */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Encabezado de la tabla */
+.table thead {
+  background-color: #333;
+  color: white;
+}
+
+/* Estilos para celdas */
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center; /* Centra el contenido */
+  border: 1px solid #ddd;
+}
+
+/* Estilo para los encabezados */
+.table th {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Estilo alternado para filas de la tabla */
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Estilo al pasar el cursor por una fila */
+.table tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Botón de acciones */
+.button {
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 5px; /* Espacio entre botones */
+}
+
+/* Botón para promover a admin */
+.button.promote {
+  background-color: #28a745;
+}
+
+/* Estilo de hover para promover a admin */
+.button.promote:hover {
+  background-color: #218838;
+}
+
+/* Botón para demover a usuario */
+.button.demote {
+  background-color: #d9534f;
+}
+
+/* Estilo de hover para demover a usuario */
+.button.demote:hover {
+  background-color: #c9302c;
+}
+
+/* Contenedor para centrar los botones de cada usuario */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre botones */
+  margin-top: 20px;
+}

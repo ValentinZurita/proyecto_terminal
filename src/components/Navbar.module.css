@@ -1,0 +1,56 @@
+/* src/components/Navbar.module.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+.navLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.navLink {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navLink:hover {
+  color: #ddd;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userRole {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ffdd57;
+}
+
+.userName {
+  font-size: 0.8rem;
+  color: #f1f1f1;
+}
+
+.logoutButton {
+  background-color: #ff4b5c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.logoutButton:hover {
+  background-color: #ff2e44;
+}

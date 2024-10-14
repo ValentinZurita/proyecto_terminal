@@ -5,7 +5,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
-  { ignores: ['dist'] },
+  { ignores: ['dist', 'functions'] },
   {
     files: ['**/*.{js,jsx}'],
     languageOptions: {
@@ -34,9 +34,8 @@ export default [
         { allowConstantExport: true },
       ],
       'no-unused-vars': 'warn',
-      'no-console': 'warn',
-      'semi': ['warn', 'never'],
-      'extends': ['eslint:recommended', 'plugin:react/recommended'],
+      'semi': 'off',
+      "react/prop-types": "off" // Desactiva la validación de PropTypes
     },
   },
 ]
