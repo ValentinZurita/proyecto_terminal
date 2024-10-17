@@ -7,7 +7,11 @@ const AuthContext = createContext();
 
 // Hook personalizado para acceder al contexto
 export const useAuth = () => {
-  return useContext(AuthContext);
+  const context = useContext(AuthContext);
+  if (context === undefined) {
+    throw new Error("useAuthSafe debe ser usado dentro de un AuthProvider");
+  }
+  return context;
 };
 
 // Proveedor de contexto de autenticación
